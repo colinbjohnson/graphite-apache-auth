@@ -1,0 +1,19 @@
+- Login with username not in DB
+ - expected: login failed, result: login failed
+
+- Login with username in DB, wrong password
+ - expected: login failed, result: login failed
+
+- Login with username in DB, right password
+ - expected: login success, result: login success
+
+- Change Password
+ - result: password prompt is generated immediately again
+ - login again with bad password, result: login failed
+ - login again with good password, result: login success
+
+- Login with deleted username, previous password
+ - login fails
+
+- Add login and password, login
+ - login success

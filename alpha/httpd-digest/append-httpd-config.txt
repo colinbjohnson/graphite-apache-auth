@@ -1,0 +1,10 @@
+#------------------------------#
+WSGIPassAuthorization On
+<Location />
+AuthType Digest
+AuthName "Graphite"
+AuthDigestProvider wsgi
+WSGIAuthUserScript /opt/graphite/conf/auth.wsgi
+Require valid-user
+</Location>
+#------------------------------#

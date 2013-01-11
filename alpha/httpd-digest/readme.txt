@@ -1,0 +1,1 @@
+Note as of 2012-01-11: as of 2012-01-11 the http digest method of authentication supports providing of sha1 encrypted passwords - not unencrypted passwords.
